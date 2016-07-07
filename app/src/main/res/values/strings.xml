@@ -9,4 +9,17 @@
     <string name="chimpanzeeButton">Chimpanzee</string>
 
     <string name="footer">Click on a buttom to view an image. Click again to get the animal to make a noise!</string>
+
+    <string name="foxNoise">Ring-ding-ding-ding-dingeringeding!\n
+        Gering-ding-ding-ding-dingeringeding!\n
+        Gering-ding-ding-ding-dingeringeding!\n\n
+        Wa-pa-pa-pa-pa-pa-pow!\n
+        Wa-pa-pa-pa-pa-pa-pow!\n
+        Wa-pa-pa-pa-pa-pa-pow!\n\n
+        Hatee-hatee-hatee-ho!\n
+        Hatee-hatee-hatee-ho!\n
+        Hatee-hatee-hatee-ho!\n\n
+        Joff-tchoff-tchoffo-tchoffo-tchoff!/n
+        Tchoff-tchoff-tchoffo-tchoffo-tchoff!/n
+        Joff-tchoff-tchoffo-tchoffo-tchoff!</string>
 </resources>

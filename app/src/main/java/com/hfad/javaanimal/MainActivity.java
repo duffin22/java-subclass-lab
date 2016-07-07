@@ -106,11 +106,19 @@ public class MainActivity extends AppCompatActivity {
                         overall.setBackgroundColor(getResources().getColor(R.color.background));
                         picture.setBackgroundColor(getResources().getColor(R.color.black));
                         footer.setTextColor(getResources().getColor(R.color.grey));
+                        footer.setText("What does the Fox say?!");
+                        footer.setOnClickListener(new TextView.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Toast.makeText(getBaseContext(),R.string.foxNoise, Toast.LENGTH_LONG).show();
+                            }
+                        });
                         isColorful=false;
                     }
                 }
             }
         });
+
 
         pythonButton.setOnClickListener(new View.OnClickListener() {
             @Override
