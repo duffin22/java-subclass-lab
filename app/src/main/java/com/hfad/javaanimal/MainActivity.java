@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button vultureButton,ostrichButton,chameleonButton,pythonButton,dolphinButton,chimpanzeeButton;
     ImageView picture;
-    TextView idView;
+    TextView idView,nameView;
     String lastClicked;
 
     @Override
@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         idView=(TextView) findViewById(R.id.idView);
 
+        nameView=(TextView) findViewById(R.id.nameView);
+
         lastClicked="nothing";
 
         vultureButton.setOnClickListener(new View.OnClickListener() {
@@ -37,9 +39,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!lastClicked.equals("vulture")) {
                     Vulture vul = new Vulture();
-                    idView.setText(vul.getAnimalID());
                     picture.setImageResource(R.drawable.vulture);
-                    idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    idView.setText(vul.getAnimalID());
+                    nameView.setText(vul.getAnimalSpecies());
+                    if (lastClicked.equals("nothing")) {
+                        idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                        nameView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    }
                     lastClicked = "vulture";
                 } else {
                     //put code for toaster here
@@ -52,9 +58,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!lastClicked.equals("ostrich")) {
                     Ostrich ost = new Ostrich();
-                    idView.setText(ost.getAnimalID());
                     picture.setImageResource(R.drawable.ostrich);
-                    idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    idView.setText(ost.getAnimalID());
+                    nameView.setText(ost.getAnimalSpecies());
+                    if (lastClicked.equals("nothing")) {
+                        idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                        nameView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    }
                     lastClicked = "ostrich";
                 } else {
                     //put code for toaster here
@@ -67,9 +77,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!lastClicked.equals("chameleon")) {
                     Chameleon cha = new Chameleon();
-                    idView.setText(cha.getAnimalID());
                     picture.setImageResource(R.drawable.chameleon);
-                    idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    idView.setText(cha.getAnimalID());
+                    nameView.setText(cha.getAnimalSpecies());
+                    if (lastClicked.equals("nothing")) {
+                        idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                        nameView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    }
                     lastClicked = "chameleon";
                 } else {
                     //toaster code
@@ -82,9 +96,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!lastClicked.equals("python")) {
                     Python pyt = new Python();
-                    idView.setText(pyt.getAnimalID());
                     picture.setImageResource(R.drawable.python);
-                    idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    idView.setText(pyt.getAnimalID());
+                    nameView.setText(pyt.getAnimalSpecies());
+                    if (lastClicked.equals("nothing")) {
+                        idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                        nameView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    }
                     lastClicked = "python";
                 } else {
                     //toaster code
@@ -97,9 +115,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!lastClicked.equals("dolphin")) {
                     Dolphin dol = new Dolphin();
-                    idView.setText(dol.getAnimalID());
                     picture.setImageResource(R.drawable.dolphin);
-                    idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    idView.setText(dol.getAnimalID());
+                    nameView.setText(dol.getAnimalSpecies());
+                    if (lastClicked.equals("nothing")) {
+                        idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                        nameView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    }
                     lastClicked = "dolphin";
                 } else {
                     //toaster code
@@ -113,8 +135,12 @@ public class MainActivity extends AppCompatActivity {
                 if (!lastClicked.equals("chimpanzee")) {
                     Chimpanzee chi = new Chimpanzee();
                     idView.setText(chi.getAnimalID());
+                    nameView.setText(chi.getAnimalSpecies());
                     picture.setImageResource(R.drawable.chimpanzee);
-                    idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    if (lastClicked.equals("nothing")) {
+                        idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                        nameView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    }
                     lastClicked = "chimpanzee";
                 } else {
                     //toaster code
