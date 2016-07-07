@@ -6,7 +6,11 @@ package com.hfad.javaanimal;
 public class Chameleon extends Reptile {
 
     public Chameleon() {
-        super("Chameleon","*silently changes colour*","@drawable/chameleon");
+        super("Chameleon","*silently changes colour*","@drawable/chameleon",false);
+    }
+
+    public void eatFly() {
+        System.out.println("The Chameleon ate a fly");
     }
 
 }

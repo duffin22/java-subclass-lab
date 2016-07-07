@@ -6,7 +6,11 @@ package com.hfad.javaanimal;
 public class Vulture extends Bird {
 
     public Vulture() {
-        super("Vulture","Squuaaawwww","@drawable/vulture");
+        super("Vulture","Squuaaawwww","@drawable/vulture",7);
+    }
+
+    public void scavenge() {
+        System.out.println("The Vulture scavenged your food!");
     }
 
 }

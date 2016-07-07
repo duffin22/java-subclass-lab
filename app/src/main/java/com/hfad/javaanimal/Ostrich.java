@@ -6,7 +6,10 @@ package com.hfad.javaanimal;
 public class Ostrich extends Bird {
 
     public Ostrich() {
-        super("Ostrich","Chirp! Chirp!","@drawable/ostrich");
+        super("Ostrich","Chirp! Chirp!","@drawable/ostrich",6);
     }
 
+    public void buryHeadInSand() {
+        System.out.println("The Ostrich buried its head!");
+    }
 }

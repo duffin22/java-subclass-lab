@@ -6,7 +6,11 @@ package com.hfad.javaanimal;
 public class Python extends Reptile {
 
     public Python() {
-        super("Python","Ssssssss","@drawable/python");
+        super("Python","Ssssssss","@drawable/python",false);
+    }
+
+    public void squishPrey() {
+        System.out.println("The Python squished his dinner!");
     }
 
 }

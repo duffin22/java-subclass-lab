@@ -6,7 +6,11 @@ package com.hfad.javaanimal;
 public class Chimpanzee extends Mammal {
 
     public Chimpanzee() {
-        super("Chimpanzee","Oo-ooh Aa-aah","@drawable/chimpanzee");
+        super("Chimpanzee","Oo-ooh Aa-aah","@drawable/chimpanzee",true);
+    }
+
+    public void eatABanana() {
+        System.out.println("The Chimpanzee ate a banana!");
     }
 
 }

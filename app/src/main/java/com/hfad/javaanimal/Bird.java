@@ -5,8 +5,15 @@ package com.hfad.javaanimal;
  */
 public abstract class Bird extends Animal {
 
-    public Bird(String animalSpecies,String animalCall, String animalPicture) {
+    private int wingspan;
+
+    public Bird(String animalSpecies,String animalCall, String animalPicture, int wingspan) {
         super(animalSpecies,animalCall,animalPicture);
+        this.wingspan=wingspan;
+    }
+
+    public int getWingspan() {
+        return wingspan;
     }
 
 }

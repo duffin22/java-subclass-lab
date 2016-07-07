@@ -5,9 +5,14 @@ package com.hfad.javaanimal;
  */
 public abstract class Mammal extends Animal {
 
+    private boolean isLandMammal;
 
-    public Mammal(String animalSpecies,String animalCall, String animalPicture) {
+    public Mammal(String animalSpecies,String animalCall, String animalPicture,boolean isLandMammal) {
         super(animalSpecies,animalCall,animalPicture);
+        this.isLandMammal=isLandMammal;
     }
 
+    public boolean isLandMammal() {
+        return isLandMammal;
+    }
 }
