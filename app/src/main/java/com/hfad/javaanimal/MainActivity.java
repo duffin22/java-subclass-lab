@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (!lastClicked.equals("chameleon")) {
                     Chameleon cha = new Chameleon();
-                    picture.setImageResource(R.drawable.chameleon);
+                    picture.setImageResource(cha.getDrawable());
                     idView.setText(cha.getAnimalID());
                     nameView.setText(cha.getAnimalSpecies());
                     if (lastClicked.equals("nothing")) {

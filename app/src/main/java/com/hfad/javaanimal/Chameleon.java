@@ -13,4 +13,8 @@ public class Chameleon extends Reptile {
         System.out.println("The Chameleon ate a fly");
     }
 
+    public int getDrawable() {
+        return R.drawable.chameleon;
+    }
+
 }
