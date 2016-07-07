@@ -6,7 +6,7 @@ package com.hfad.javaanimal;
 public class Chameleon extends Reptile {
 
     public Chameleon() {
-        super("Chameleon","Silently changes colour","@drawable/chameleon");
+        super("Chameleon","*silently changes colour*","@drawable/chameleon");
     }
 
 }

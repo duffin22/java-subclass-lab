@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                     lastClicked = "vulture";
                 } else {
-                    //put code for toaster here
+                    Vulture vul=new Vulture();
+                    Toast.makeText(getBaseContext(),vul.getAnimalCall(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -67,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                     lastClicked = "ostrich";
                 } else {
-                    //put code for toaster here
+                    Ostrich ost = new Ostrich();
+                    Toast.makeText(getBaseContext(),ost.getAnimalCall(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -86,7 +89,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                     lastClicked = "chameleon";
                 } else {
-                    //toaster code
+                    Chameleon cha = new Chameleon();
+                    Toast.makeText(getBaseContext(),cha.getAnimalCall(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -105,7 +109,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                     lastClicked = "python";
                 } else {
-                    //toaster code
+                    Python pyt = new Python();
+                    Toast.makeText(getBaseContext(),pyt.getAnimalCall(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -124,7 +129,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                     lastClicked = "dolphin";
                 } else {
-                    //toaster code
+                    Dolphin dol = new Dolphin();
+                    Toast.makeText(getBaseContext(),dol.getAnimalCall(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -143,7 +149,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                     lastClicked = "chimpanzee";
                 } else {
-                    //toaster code
+                    Chimpanzee chi = new Chimpanzee();
+                    Toast.makeText(getBaseContext(),chi.getAnimalCall(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
