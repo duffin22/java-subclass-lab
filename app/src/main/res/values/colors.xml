@@ -7,4 +7,6 @@
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
     <color name="button_green">#66B06B</color>
+
+    <color name="halfBlack">#55000000</color>
 </resources>

@@ -47,14 +47,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Chameleon cha =new Chameleon();
+                idView.setText(cha.getAnimalID());
                 picture.setImageResource(R.drawable.chameleon);
+                idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
             }
         });
 
         pythonButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Python pyt=new Python();
+                idView.setText(pyt.getAnimalID());
                 picture.setImageResource(R.drawable.python);
+                idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
             }
         });
 

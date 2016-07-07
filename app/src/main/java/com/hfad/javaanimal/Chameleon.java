@@ -9,5 +9,4 @@ public class Chameleon extends Reptile {
         super("Chameleon","Silently changes colour","@drawable/chameleon");
     }
 
-
 }

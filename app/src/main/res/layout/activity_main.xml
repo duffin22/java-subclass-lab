@@ -28,9 +28,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/idView"
-            android:text="the lion's den"
             android:layout_gravity="right|bottom"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:textColor="@color/white"/>
     </FrameLayout>
 
     <LinearLayout
