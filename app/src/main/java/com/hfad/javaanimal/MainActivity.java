@@ -12,8 +12,10 @@ public class MainActivity extends AppCompatActivity {
 
     Button vultureButton,ostrichButton,chameleonButton,pythonButton,dolphinButton,chimpanzeeButton;
     ImageView picture;
-    TextView idView,nameView;
+    TextView idView,nameView,footer;
     String lastClicked;
+    View overall;
+    boolean isColorful=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
         idView=(TextView) findViewById(R.id.idView);
 
         nameView=(TextView) findViewById(R.id.nameView);
+
+        footer=(TextView) findViewById(R.id.footer);
+
+        overall=findViewById(R.id.overall);
 
         lastClicked="nothing";
 
@@ -91,6 +97,17 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     Chameleon cha = new Chameleon();
                     Toast.makeText(getBaseContext(),cha.getAnimalCall(), Toast.LENGTH_SHORT).show();
+                    if (lastClicked.equals("chameleon") && !isColorful) {
+                        overall.setBackgroundColor(getResources().getColor(R.color.purple));
+                        picture.setBackgroundColor(getResources().getColor(R.color.pink));
+                        footer.setTextColor(getResources().getColor(R.color.white));
+                        isColorful=true;
+                    } else if (lastClicked.equals("chameleon") && isColorful) {
+                        overall.setBackgroundColor(getResources().getColor(R.color.background));
+                        picture.setBackgroundColor(getResources().getColor(R.color.black));
+                        footer.setTextColor(getResources().getColor(R.color.grey));
+                        isColorful=false;
+                    }
                 }
             }
         });
