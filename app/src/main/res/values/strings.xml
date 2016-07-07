@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JavaAnimal</string>
+
+    <string name="vultureButton">Vulture</string>
+    <string name="ostrichButton">Ostrich</string>
+    <string name="chameleonButton">Chameleon</string>
+    <string name="pythonButton">Python</string>
+    <string name="dolphinButton">Dolphin</string>
+    <string name="chimpanzeeButton">Chimpanzee</string>
+</resources>
