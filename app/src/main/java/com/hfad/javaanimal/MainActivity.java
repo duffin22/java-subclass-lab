@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     Button vultureButton,ostrichButton,chameleonButton,pythonButton,dolphinButton,chimpanzeeButton;
     ImageView picture;
     TextView idView;
+    String lastClicked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,51 +30,95 @@ public class MainActivity extends AppCompatActivity {
 
         idView=(TextView) findViewById(R.id.idView);
 
+        lastClicked="nothing";
+
         vultureButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                picture.setImageResource(R.drawable.vulture);
+                if (!lastClicked.equals("vulture")) {
+                    Vulture vul = new Vulture();
+                    idView.setText(vul.getAnimalID());
+                    picture.setImageResource(R.drawable.vulture);
+                    idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    lastClicked = "vulture";
+                } else {
+                    //put code for toaster here
+                }
             }
         });
 
         ostrichButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                picture.setImageResource(R.drawable.ostrich);
+                if (!lastClicked.equals("ostrich")) {
+                    Ostrich ost = new Ostrich();
+                    idView.setText(ost.getAnimalID());
+                    picture.setImageResource(R.drawable.ostrich);
+                    idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    lastClicked = "ostrich";
+                } else {
+                    //put code for toaster here
+                }
             }
         });
 
         chameleonButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Chameleon cha =new Chameleon();
-                idView.setText(cha.getAnimalID());
-                picture.setImageResource(R.drawable.chameleon);
-                idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                if (!lastClicked.equals("chameleon")) {
+                    Chameleon cha = new Chameleon();
+                    idView.setText(cha.getAnimalID());
+                    picture.setImageResource(R.drawable.chameleon);
+                    idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    lastClicked = "chameleon";
+                } else {
+                    //toaster code
+                }
             }
         });
 
         pythonButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Python pyt=new Python();
-                idView.setText(pyt.getAnimalID());
-                picture.setImageResource(R.drawable.python);
-                idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                if (!lastClicked.equals("python")) {
+                    Python pyt = new Python();
+                    idView.setText(pyt.getAnimalID());
+                    picture.setImageResource(R.drawable.python);
+                    idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    lastClicked = "python";
+                } else {
+                    //toaster code
+                }
             }
         });
 
         dolphinButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                picture.setImageResource(R.drawable.dolphin);
+                if (!lastClicked.equals("dolphin")) {
+                    Dolphin dol = new Dolphin();
+                    idView.setText(dol.getAnimalID());
+                    picture.setImageResource(R.drawable.dolphin);
+                    idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    lastClicked = "dolphin";
+                } else {
+                    //toaster code
+                }
             }
         });
 
         chimpanzeeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                picture.setImageResource(R.drawable.chimpanzee);
+                if (!lastClicked.equals("chimpanzee")) {
+                    Chimpanzee chi = new Chimpanzee();
+                    idView.setText(chi.getAnimalID());
+                    picture.setImageResource(R.drawable.chimpanzee);
+                    idView.setBackgroundColor(getResources().getColor(R.color.halfBlack));
+                    lastClicked = "chimpanzee";
+                } else {
+                    //toaster code
+                }
             }
         });
 

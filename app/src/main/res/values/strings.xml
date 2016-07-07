@@ -7,4 +7,6 @@
     <string name="pythonButton">Python</string>
     <string name="dolphinButton">Dolphin</string>
     <string name="chimpanzeeButton">Chimpanzee</string>
+
+    <string name="footer">Click on a buttom to view an image. Click again to get the animal to make a noise!</string>
 </resources>
